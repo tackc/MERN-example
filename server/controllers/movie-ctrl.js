@@ -111,3 +111,11 @@ getMovies = async (req, res) => {
         return res.status(200).json({ success: true, data: movies })
     }).catch(err => console.log(err))
 }
+
+module.exports = {
+    createMovie,
+    updateMovie,
+    deleteMovie,
+    getMovies,
+    getMovieById,
+};
