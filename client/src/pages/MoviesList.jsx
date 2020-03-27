@@ -58,11 +58,25 @@ class MoviesList extends Component {
                 Cell: props => <span>{props.value.join(' / ')}</span>,
             },
         ]
+
+        let showTable = true;
+        if (!movies.length) {
+            showTable = false;
+        }
         
         return(
-            <div>
-                <p>On this page, you'll see the list of movies!</p>
-            </div>
+            <Wrapper>
+                {showTable && (
+                    <ReactTable 
+                        data={movies}
+                        columns={columns}
+                        loading={isLoading}
+                        defaultPageSize={10}
+                        showPageSizeOptions={true}
+                        minRows={0}
+                    />
+                )}
+            </Wrapper>
         )
     }
 }
