@@ -32,6 +32,33 @@ class MoviesList extends Component {
     }
     
     render() {
+        const { movies, isLoading } = this.state;
+
+        console.log('TCL: MoviesList -> render -> movies', movies);
+
+        const columns = [
+            {
+                Header: 'ID',
+                accessor: '_id',
+                filterable: true,
+            },
+            {
+                Header: 'Name',
+                accessor: 'name',
+                filterable: 'true',
+            },
+            {
+                Header: 'Rating',
+                accessor: 'rating',
+                filterable: 'true',
+            },
+            {
+                Header: 'Time',
+                accessor: 'time',
+                Cell: props => <span>{props.value.join(' / ')}</span>,
+            },
+        ]
+        
         return(
             <div>
                 <p>On this page, you'll see the list of movies!</p>
