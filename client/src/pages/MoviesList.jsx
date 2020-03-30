@@ -64,7 +64,7 @@ class MoviesList extends Component {
             showTable = false;
         }
         
-        return(
+        return (
             <Wrapper>
                 {showTable && (
                     <ReactTable 
