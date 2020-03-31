@@ -8,12 +8,17 @@
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.1",
+    "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-is": "^16.13.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
-    "react-table": "^6.10.0",
-    "styled-components": "^5.0.1"
+    "react-table": "~6.10.0",
+    "styled-components": "^5.0.1",
+    "typescript": "^3.8.3"
   },
   "scripts": {
     "start": "PORT=8000 react-scripts start",
