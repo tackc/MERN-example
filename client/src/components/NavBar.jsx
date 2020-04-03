@@ -5,11 +5,12 @@ import Logo from './Logo';
 import Links from './Links';
 
 const Container = styled.div.attrs({
-    className: 'container',
+    // className: 'container',
 })``
 
 const Nav = styled.nav.attrs({
-    className: 'navbar navbar-expand-lg navbar-dark bg-dark',
+    className: 'navbar navbar-expand-lg navbar-dark bg-dark min-vw-100',
+    // className: 'navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar',
 })`
     margin-bottom: 20px/
 `
